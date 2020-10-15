@@ -64,10 +64,10 @@ function clickHandler(evt) {
     deal.value = '';
 };
 
-/*function delTask(e) {
+function delTask(e) {
     let parent = e.target.parentElement;
     localStorage.removeItem(parent.id);
     setTimeout(() => parent.remove(), 500);
-};*/
+};
 
 button.addEventListener('click', clickHandler);
