@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Спиок дел</title>
+<link rel="stylesheet" href="style main.css">
+</head>
+<body>
+	<div class="fbox">
+		<div class="important urgent fContainer">
+			<div class="red"></div>
+		</div>
+		<div class="not-important urgent fContainer">
+			<div class="yellow"></div>
+		</div>
+		<div class="important not-urgent fContainer">
+			<div class="green"></div>
+		</div>
+		<div class="not-important not-urgent fContainer">
+			<div class="orange"></div>
+		</div>
+	</div>
+	<form method="post">
+		<label for="deal">Введите текст задания</label>
+		<input type="text" id="deal" name="task-text">
+		<input type="submit" value="Создать задание" class="buttonSubmit">
+		<select>
+			<option>red</option>
+			<option>yellow</option>
+			<option selected>green</option>
+			<option>orange</option>
+		</select>
+	</form>
+	<template id="dealTemplate">
+		<div class="taskBox">
+			<span class="textTemplate"></span>
+			<input type="checkbox" class="clearTask">
+		</div>
+	</template>
+	<script src="blabla.js"></script>
+</body>
+</html>

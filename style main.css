@@ -1,0 +1,49 @@
+.fbox {
+	width: 60%;
+	height: 700px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+.fbox .fContainer {
+	width: 380px;
+	height: 330px;
+	border-radius: 15px;
+	overflow-y: auto;
+}
+
+.fbox .fContainer > div {
+	max-width: 100%;
+}
+
+.taskBox {
+	max-width: 100%;
+	margin: 10px;
+	display: grid;
+	grid-template: 1fr / 90% 10%;
+}
+
+.taskBox span {
+	max-width: 100%;
+	white-space: normal;
+	word-wrap: break-word;
+}
+
+.fbox .important.urgent {
+	background-color: red;
+}
+
+.fbox .not-important.urgent {
+	background-color: yellow;
+}
+
+.fbox .not-important.not-urgent {
+	background-color: orange;
+}
+
+.fbox .important.not-urgent {
+	background-color: green;
+}
